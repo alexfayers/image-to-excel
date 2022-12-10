@@ -1,4 +1,4 @@
-"""Example tests for new_project_readable_name."""
+"""Example tests for image-to-excel."""
 
 
 def test_main() -> None:
