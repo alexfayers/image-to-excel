@@ -1,6 +1,6 @@
 # image-to-excel
 
-An epic projected called image_to_excel, by alexfayers!
+A simple project to convert from an image to an excel file, because my brother wanted something that did this.
 
 ## Installation
 
@@ -22,11 +22,12 @@ You can use image-to-excel as an importable module:
 
 ```py
 from image_to_excel import BaseClass
+from pathlib import Path
 
 app = BaseClass("config.yml")
 
-app.logger.info(
-    f"Hi, welcome to {app.config.INFO.NAME} by {app.config.INFO.AUTHOR}!"
+app.image_to_excel(
+    Path("input.jpg"), 100, Path("output.xlsx")
 )
 ```
 
@@ -35,7 +36,7 @@ Or as a command line interface:
 ```bash
 $ python3 -m image_to_excel
 # or
-$ image_to_excel
+$ image_to_excel -w 100 input.jpg output.xslx
 ```
 
 ## Documentation

@@ -6,4 +6,4 @@ from .nice_logger import ColoredFormatter, SuccessLogger
 
 logger = logging.getLogger(__name__)
 
-__all__ = ["Config", "ConfigSection", "SuccessLogger", "ColoredFormatter"]
+__all__ = ["SuccessLogger", "ColoredFormatter"]

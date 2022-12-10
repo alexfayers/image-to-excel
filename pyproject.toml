@@ -19,6 +19,9 @@ image_to_excel = "image_to_excel:cli_main"
 python = ">=3.8,<4.0"
 typeguard = "^2.13.3"
 pyyaml = "^6.0"
+numpy = "^1.23.5"
+pillow = "^9.3.0"
+xlsxwriter = "^3.0.3"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.0"
