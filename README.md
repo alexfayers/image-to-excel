@@ -4,16 +4,10 @@ A simple project to convert from an image to an excel file, because my brother w
 
 ## Installation
 
-To install the project you only need to clone the repo and run pip install within the repo folder:
+You can install the project using pip :)
 
 ```bash
-pip install .
-```
-
-If you like using virtual environments, you can easily install the project within one using [pipx](https://pypa.github.io/pipx/):
-
-```bash
-pipx install .
+pip install image-to-excel
 ```
 
 ## Usage
@@ -36,7 +30,7 @@ Or as a command line interface:
 ```bash
 $ python3 -m image_to_excel
 # or
-$ image_to_excel -w 100 input.jpg output.xslx
+$ image-to-excel -w 100 input.jpg output.xslx
 ```
 
 ## Documentation

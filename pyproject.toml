@@ -15,7 +15,7 @@ repository = "https://github.com/alexfayers/image-to-excel"
 include = ["LICENSE", "src/image_to_excel/py.typed", "src/image_to_excel/VERSION"]
 
 [tool.poetry.scripts]
-image_to_excel = "image_to_excel:cli_main"
+image-to-excel = "image_to_excel:cli_main"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
