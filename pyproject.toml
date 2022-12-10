@@ -10,6 +10,8 @@ authors = ["alex.fayers <alex@fayers.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "image_to_excel", from = "src"}]
+homepage = "https://github.com/alexfayers/image-to-excel"
+repository = "https://github.com/alexfayers/image-to-excel"
 include = ["LICENSE", "src/image_to_excel/py.typed", "src/image_to_excel/VERSION"]
 
 [tool.poetry.scripts]
