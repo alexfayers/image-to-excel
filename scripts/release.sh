@@ -28,13 +28,13 @@ git add CHANGELOG.md
 git commit -m "Update CHANGELOG.md"
 
 # Get the current version number
-current_version=$(cat src/image_to_excel/VERSION)
+current_version=$(poetry version -s)
 
 # Update the version number using poetry
 poetry version "$1"
 
 # Get the new version number
-new_version=$(cat src/image_to_excel/VERSION)
+new_version=$(poetry version -s)
 
 # Update the version number in the git repo
 git add .
