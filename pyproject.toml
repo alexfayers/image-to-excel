@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "image-to-excel"
 version = "1.0.0"
-description = "An epic projected called image_to_excel, by alexfayers!"
+description = "A simple project to convert from an image to an excel file, because my brother wanted something that did this."
 authors = ["alex.fayers <alex@fayers.com>"]
 license = "MIT"
 readme = "README.md"
