@@ -1,8 +1,9 @@
 """Image manipulation module."""
-from pathlib import Path
-from PIL import Image
-import numpy as np
 import logging
+from pathlib import Path
+
+import numpy as np
+from PIL import Image
 
 logger = logging.getLogger(__name__)
 
@@ -43,8 +44,7 @@ class ImageManipulator:
 
         if new_width >= current_width:
             logger.warning(
-                "New width is greater than or the same as the current width. "
-                "Using original image without resizing."
+                "New width is greater than or the same as the current width. " "Using original image without resizing."
             )
             return image
 

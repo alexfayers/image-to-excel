@@ -1,9 +1,10 @@
 """Module to write out data to a new excel file."""
+import logging
 from pathlib import Path
+
+import numpy as np
 import xlsxwriter
 import xlsxwriter.format
-import numpy as np
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -30,9 +31,7 @@ class ExcelWriter:
         Returns:
             xlsxwriter.format.Format: The format for the pixel.
         """
-        return self.workbook.add_format(
-            {"bg_color": f"#{pixel[0]:02x}{pixel[1]:02x}{pixel[2]:02x}"}
-        )
+        return self.workbook.add_format({"bg_color": f"#{pixel[0]:02x}{pixel[1]:02x}{pixel[2]:02x}"})
 
     def write_image_array(self, image: np.ndarray) -> None:
         """Write an image array to the excel file, using one cell to represent one pixel.
